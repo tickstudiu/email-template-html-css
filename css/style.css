@@ -1,0 +1,88 @@
+/*
+create by Wanchalerm for education
+email : tickstudiu@gmail.com
+facebook: wanchalerm suksawat
+*/
+
+/*
+set all template to center of page
+*/
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #eaeaea;
+}
+
+/*
+create border on top of email template
+set
+*/
+.email-body{
+    border-top: 5px solid #343a40;
+    background: white;
+    padding: 0 1rem;
+    border-radius: 0 0 25px 25px;
+    margin-bottom: 2rem;
+}
+
+/* make gap between anther text and top */
+.email-header {
+    margin: 2rem 0;
+}
+
+/*
+make gap between anther text and bot
+set text at center btn and size to 55% of line
+*/
+.email-article button{
+    margin: 2rem 0;
+    width: 55%;
+    text-align: center;
+}
+
+
+/*
+at last child of P set to 0 margin
+*/
+.email-article p:nth-child(2){
+    margin: 0;
+}
+
+/*
+set obj inside class to center
+*/
+.email-article section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+set margin to set gap between email-footer and email body to create white space
+*/
+.email-footer{
+    margin-bottom: 2rem;
+}
+
+/*
+set p to 0 margin
+*/
+.email-footer p{
+     margin: 0;
+}
+
+/*
+set text to 2rem margin
+*/
+.team-name{
+    padding-bottom: 2rem;
+}
+
+/*
+set p to 0 margin
+*/
+.email-date p{
+    margin: 0;
+}
