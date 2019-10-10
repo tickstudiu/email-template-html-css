@@ -99,7 +99,7 @@
         }
 
         .btn {
-            display: inline-block;
+            display: inline-block !important;
             font-weight: 400;
             text-align: center;
             white-space: nowrap;
@@ -153,10 +153,8 @@ facebook: wanchalerm suksawat
 set all template to center of page
 */
         .wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            padding-top: 20vh;
+            height: 80vh;
             background: #eaeaea;
         }
 
@@ -199,9 +197,16 @@ at last child of P set to 0 margin
 set obj inside class to center
 */
         .email-article section {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            width: 55%;
+            margin: 0 auto;
+        }
+
+        /*
+set btn cover div
+*/
+        .email-article section button {
+            width: 100%;
+            display: block;
         }
 
         /*
@@ -251,7 +256,7 @@ set p to 0 margin
                         veritatis et quasi architecto. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
                         aut odit aut fugit, sed quia consequuntur magni dolores</p>
                     <section>
-                        <button class="btn btn-lg btn-secondary text-capitalize">click to verify email</button>
+                        <button class="btn btn-block btn-secondary text-capitalize">click to verify email</button>
                     </section>
                 </article>
 
