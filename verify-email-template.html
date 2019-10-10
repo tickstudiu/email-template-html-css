@@ -7,8 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <style rel="stylesheet">
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            text-align: left;
+            background-color: #fff;
+        }
+
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-bottom: .5rem;
+            font-family: inherit;
+            font-weight: 500;
+            line-height: 1.2;
+            color: inherit;
+        }
+
+        .h5,
+        h5 {
+            font-size: 1.25rem;
+        }
+
+        .h2,
+        h2 {
+            font-size: 2rem;
+        }
+
         @media (min-width: 768px) {
             .container {
                 max-width: 720px;
@@ -21,6 +60,84 @@
             padding-left: 15px;
             margin-right: auto;
             margin-left: auto;
+        }
+
+        .text-capitalize {
+            text-transform: capitalize !important;
+        }
+
+        .lead {
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+
+        .text-muted {
+            color: #6c757d !important;
+        }
+
+        .small,
+        small {
+            font-size: 80%;
+            font-weight: 400;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        .btn-secondary {
+            color: #fff;
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+
+        button,
+        input {
+            overflow: visible;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+        .btn:not(:disabled):not(.disabled) {
+            cursor: pointer;
+        }
+
+        .m-0 {
+            margin: 0
         }
     </style>
 
@@ -122,35 +239,32 @@ set p to 0 margin
 <body>
     <div class="wrapper">
         <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-12 offset-md-2">
-                    <div class="email-body shadow">
-                        <header class="email-header">
-                            <h2 class="text-capitalize m-0">confirm your email address</h2>
-                        </header>
+            <div class="email-body shadow">
+                <header class="email-header">
+                    <h2 class="text-capitalize m-0">confirm your email address</h2>
+                </header>
 
-                        <article class="email-article">
-                            <p class="lead">Hi Wanchalerm,</p>
-                            <p class="small text-muted">ed ut perspiciatis unde omnis iste natus error sit, eaque ipsa quae ab illo inventore
-                                veritatis et quasi architecto. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                                aut odit aut fugit, sed quia consequuntur magni dolores</p>
-                            <section>
-                                <button class="btn btn-lg btn-secondary text-capitalize">click to verify email</button>
-                            </section>
-                        </article>
+                <article class="email-article">
+                    <p class="lead">Hi Wanchalerm,</p>
+                    <p class="small text-muted">ed ut perspiciatis unde omnis iste natus error sit, eaque ipsa
+                        quae ab illo inventore
+                        veritatis et quasi architecto. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                        aut odit aut fugit, sed quia consequuntur magni dolores</p>
+                    <section>
+                        <button class="btn btn-lg btn-secondary text-capitalize">click to verify email</button>
+                    </section>
+                </article>
 
-                        <footer class="email-footer">
-                            <p class="text-muted small">or verify using this link:</p>
-                            <a href="#">https://xxx-yyy/123456</a>
-                        </footer>
+                <footer class="email-footer">
+                    <p class="text-muted small">or verify using this link:</p>
+                    <a href="#">https://xxx-yyy/123456</a>
+                </footer>
 
-                        <h5 class="text-capitalize team-name ">Tourism Volunteer Team</h5>
-                    </div>
-                    <div class="text-center text-muted small email-date">
-                        <p>This message was sent from Tourism Volunteer Service System,</p>
-                        <p>Inc., 1633 Broadway, 38th floor, NY, NY 10019</p>
-                    </div>
-                </div>
+                <h5 class="text-capitalize team-name ">Tourism Volunteer Team</h5>
+            </div>
+            <div class="text-center text-muted small email-date">
+                <p>This message was sent from Tourism Volunteer Service System,</p>
+                <p>Inc., 1633 Broadway, 38th floor, NY, NY 10019</p>
             </div>
         </div>
     </div>
